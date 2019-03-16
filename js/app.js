@@ -12,7 +12,7 @@ var cards = ['fa-diamond', 'fa-diamond',
 			];
 
 function generateCard(card) {
-	return `<li class="card"><i class="fa ${card}"></i></li>`;
+	return `<li class="card" data-card="${card}"><i class="fa ${card}"></i></li>`;
 }
 
 /*
@@ -70,18 +70,28 @@ allCards.forEach(function(card) {
 		if (!card.classList.contains('open') && !card.classList.contains('show') && !card.classList.contains('match')) {
 			openCards.push(card);
 			card.classList.add('open','show');
-			console.log('Open Cards:', openCards.length);
-
-
-			// if cards doesn't match - turn them back
+			
 			if (openCards.length == 2) {
-				setTimeout(function() {
-					openCards.forEach(function(card) {
-						card.classList.remove('open', 'show');
-					});
+				if (openCards[0].dataset.card == openCards[1].dataset.card) {
+					openCards[0].classList.add('match');
+					openCards[0].classList.add('open');
+					openCards[0].classList.add('show');
+
+					openCards[1].classList.add('match');
+					openCards[1].classList.add('open');
+					openCards[1].classList.add('show');
 
 					openCards = [];
-				}, 1000);
+				} else {
+					// if cards doesn't match - turn them back
+					setTimeout(function() {
+						openCards.forEach(function(card) {
+							card.classList.remove('open', 'show');
+						});
+
+						openCards = [];
+					}, 1000);
+				}
 			}
 		} 
 	});
