@@ -1,0 +1,393 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mess",
+				"messages"
+			],
+			[
+				"in",
+				"interestRatePercent"
+			],
+			[
+				"p",
+				"printAccountSummary"
+			],
+			[
+				"reve",
+				"reverseString"
+			],
+			[
+				"eats",
+				"eatsPlants"
+			],
+			[
+				"ca",
+				"carnivore"
+			],
+			[
+				"eat",
+				"eatsPlants"
+			],
+			[
+				"shi",
+				"shirtSleeve"
+			],
+			[
+				"shirt",
+				"shirtWidth"
+			],
+			[
+				"if",
+				"ife\tif … else"
+			],
+			[
+				"i",
+				"interest"
+			],
+			[
+				"aw",
+				"awesomeMessage"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"a",
+				"awesomeMessage"
+			],
+			[
+				"s",
+				"slider"
+			],
+			[
+				"text",
+				"text-transform\tproperty"
+			],
+			[
+				"u",
+				"uppercase\ttext-transform"
+			],
+			[
+				"font",
+				"font-variant-caps\tproperty"
+			],
+			[
+				"box",
+				"box-sizing\tproperty"
+			],
+			[
+				"fle",
+				"flex-grow\tproperty"
+			],
+			[
+				"flex",
+				"flex-flow\tproperty"
+			],
+			[
+				"m",
+				"min-width\tproperty"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
+				"mar",
+				"margin-right\tproperty"
+			],
+			[
+				"margin",
+				"margin-left\tproperty"
+			],
+			[
+				"min",
+				"min-width\tproperty"
+			],
+			[
+				"ali",
+				"text-align\tproperty"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"back",
+				"background-color\tproperty"
+			],
+			[
+				"ba",
+				"background-color\tproperty"
+			],
+			[
+				"min-",
+				"min-height\tproperty"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2594,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 119.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"package control",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: Insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instell",
+				"Install Package Control"
+			]
+		],
+		"width": 412.0
+	},
+	"console":
+	{
+		"height": 332.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/MemoryGame"
+	],
+	"file_history":
+	[
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/MemoryGame/css/app.css",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/course-JS-and-the-DOM-master/app.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/course-JS-and-the-DOM-master/index.html",
+		"/Users/tanya_fish/Desktop/vacationtimer.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/es6-1-5.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-7-3.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-7-5.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-7-1.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-6-9.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-4-7.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-4-4.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-4-2.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-3-9.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-4-3.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-4-1.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-3-5.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-3-8.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-3-7.js",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/JS-3-6.js",
+		"/Users/tanya_fish/Dropbox/Приложения/My.DropPages/stepa.droppages.com/Public/main.css",
+		"/Users/tanya_fish/Dropbox/Приложения/My.DropPages/stepa.droppages.com/Content/index.html",
+		"/Users/tanya_fish/Dropbox/Приложения/My.DropPages/stepa.droppages.com/Content/css/responsive.css",
+		"/Users/tanya_fish/Dropbox/Приложения/My.DropPages/stepa.droppages.com/Content/css/main.css",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/RWDF-L4-Solution/index.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/RWDF-L4-Solution/main.css",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/RWDF-L4-Solution/responsive.css",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/mostly-fluid.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/propagination.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/pattern-mostly-fluid-quiz-blankcss.html",
+		"/Users/tanya_fish/Dropbox/Приложения/My.DropPages/stepa.droppages.com/Content/mostly-fluid.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/minwidth.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/RWDF L2 Solution/index.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/RWDF L2 Solution/main.css",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/Start/index.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/Start/main.css",
+		"/Users/tanya_fish/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/keyboard-shortcuts/finish.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/keyboard-shortcuts/start.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/FrontEnd/keyboard-shortcuts/start-1.html",
+		"/Users/tanya_fish/Dropbox/Stepa-and-Tanya/Work/Zyxel/KIA/_Out/ok.svg",
+		"/private/var/folders/n1/n3nhgtgx3c5gbqp1rd106rvh0000gn/T/TemporaryItems/ok.svg",
+		"/Users/tanya_fish/Desktop/hf_renderer/hf_renderer-ausser.html",
+		"/Users/tanya_fish/Desktop/is_renderer/is_renderer.html",
+		"/Users/tanya_fish/Desktop/female and male.html"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 102.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2594,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								817,
+								817
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "memoryGame.sublime-project",
+	"replace":
+	{
+		"height": 71.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 188.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
