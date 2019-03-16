@@ -49,6 +49,12 @@ function shuffle(array) {
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
 
+//TODO: Need to figure out about the Moves. They doesn't work inside the Function.
+// var moves = 0;
+// moves += 1;
+// var moveCounter = document.querySelector('.moves');
+// moveCounter.innerText = moves;
+
 
 function initGame() {
 	var deck = document.querySelector('.deck');
@@ -93,6 +99,6 @@ allCards.forEach(function(card) {
 					}, 1000);
 				}
 			}
-		} 
+		}
 	});
 });
