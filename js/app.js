@@ -56,6 +56,13 @@ function shuffle(array) {
 // moveCounter.innerText = moves;
 
 
+
+// Restart doesn't work as expected! It's only reseted the deck, but clicks stops working after that.
+// function restart() {
+// 	initGame();
+// 	console.log('clicked');
+// }
+
 function initGame() {
 	var deck = document.querySelector('.deck');
 	var cardHTML = shuffle(cards).map(function(card) {
@@ -66,6 +73,39 @@ function initGame() {
 }
 
 initGame();
+
+// Timer!
+
+var minutesLabel = document.querySelector('.minutes');
+var secondsLabel = document.querySelector('.seconds');
+var totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+}
+
+function pad(val) {
+  var valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
+}
+
+
+// var seconds = 0;
+// var timerText = document.querySelector('.timer');
+
+// function incrementSeconds() {
+//     seconds += 1;
+//     timerText.innerText = "Time played: " + seconds;
+// }
+// var cancel = setInterval(incrementSeconds, 1000);
+// End of Timer
 
 var allCards = document.querySelectorAll('.card');
 var openCards = [];
