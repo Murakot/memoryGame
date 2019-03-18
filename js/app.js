@@ -95,16 +95,6 @@ function pad(val) {
     return valString;
   }
 }
-
-
-// var seconds = 0;
-// var timerText = document.querySelector('.timer');
-
-// function incrementSeconds() {
-//     seconds += 1;
-//     timerText.innerText = "Time played: " + seconds;
-// }
-// var cancel = setInterval(incrementSeconds, 1000);
 // End of Timer
 
 var allCards = document.querySelectorAll('.card');
