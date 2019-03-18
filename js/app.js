@@ -55,14 +55,6 @@ function shuffle(array) {
 // var moveCounter = document.querySelector('.moves');
 // moveCounter.innerText = moves;
 
-
-
-// Restart doesn't work as expected! It's only reseted the deck, but clicks stops working after that.
-// function restart() {
-// 	initGame();
-// 	console.log('clicked');
-// }
-
 function initGame() {
 	var deck = document.querySelector('.deck');
 	var cardHTML = shuffle(cards).map(function(card) {
