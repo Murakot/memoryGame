@@ -99,6 +99,7 @@ function pad(val) {
 
 var allCards = document.querySelectorAll('.card');
 
+moveCounter.innerText = 'Moves: ' + moves;
 
 allCards.forEach(function(card) {
 	card.addEventListener('click', function(e) {
@@ -124,8 +125,8 @@ allCards.forEach(function(card) {
 					openCards = [];
 
 					moves += 1;
-					moveCounter.innerText = ' ' + moves;
-					
+					moveCounter.innerText = 'Moves: ' + moves;
+
 				} else {
 					// if cards doesn't match - turn them back
 					setTimeout(function() {
@@ -134,7 +135,7 @@ allCards.forEach(function(card) {
 						});
 						
 						moves += 1;
-						moveCounter.innerText = ' ' + moves;
+						moveCounter.innerText = 'Moves: ' + moves;
 
 						openCards = [];
 					}, 1000);

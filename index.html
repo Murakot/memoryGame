@@ -17,22 +17,22 @@
 
         <section class="score-panel">
         	<!-- TODO: Need to update stars, based on moves -->
-            <ul class="stars">
+            <span>Score: <ul class="stars">
         		<li><i class="fa fa-star"></i></li>
         		<li><i class="fa fa-star"></i></li>
         		<li><i class="fa fa-star"></i></li>
-        	</ul>
+        	</ul></span>
             <!-- Goes from JS -->
-        	<label>Moves</label><span class="moves"></span>
+        	<span class="moves"></span>
 
             <!-- Timer Here -->
-            <label class="timer">Timer:&nbsp;</label><label class="minutes">00</label>:<label class="seconds">00</label>
+            <span class="timer">Timer:&nbsp;</label><label class="minutes">00</label>:<label class="seconds">00</label></span>
             
             <!-- Reload the page on Restart click -->
-            <div class="restart" title="Start again!" onClick="document.location.reload(true)">
+            <span class="restart" title="Start again!" onClick="document.location.reload(true)">
             <!-- <div class="restart" title="Start again!" onClick="initGame()"> -->
         		<i class="fa fa-repeat"></i>
-        	</div>
+        	</span>
         </section>
 
         <!-- Generating the deck in JS (function generateCard) -->
