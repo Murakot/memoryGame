@@ -2,11 +2,11 @@
  * Create a list that holds all of your cards
  */
  
-var timer = null,
-openCards,
-totalSeconds,
-deck = document.querySelector('.deck'),
-cards = ['fa-diamond', 'fa-diamond',
+var timer = null;
+var openCards;
+var totalSeconds;
+var deck = document.querySelector('.deck');
+var cards = ['fa-diamond', 'fa-diamond',
 			'fa-paper-plane-o', 'fa-paper-plane-o',
 			'fa-anchor', 'fa-anchor',
 			'fa-bolt', 'fa-bolt',
