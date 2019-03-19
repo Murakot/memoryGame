@@ -4,6 +4,7 @@
  
 var timer = null;
 var openCards;
+var matched = 0;
 var totalSeconds;
 var moves;
 var moveCounter = document.querySelector('.moves');
@@ -123,6 +124,8 @@ allCards.forEach(function(card) {
 					openCards[1].classList.add('show');
 
 					openCards = [];
+					matched += 1;
+					console.log(matched);
 
 					moves += 1;
 					moveCounter.innerText = 'Moves: ' + moves;
