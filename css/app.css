@@ -75,7 +75,7 @@ h1 {
 
 .deck .card.show {
     font-size: 33px;
-    transform: rotateY(180deg);
+    transform: rotateY(0deg);
 }
 
 .deck .card.match {
