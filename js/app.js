@@ -92,6 +92,11 @@ function pad(val) {
 }
 // End of Timer
 
+// Flipping cards
+// function flip() {
+//     $('.card').toggleClass('flipped');
+// }
+
 var allCards = document.querySelectorAll('.card');
 
 
@@ -101,14 +106,11 @@ allCards.forEach(function(card) {
     if(timer === null) {
     	timer = setInterval(setTime, 1000);
     }
-    
-	moves += 1;
-	moveCounter.innerText = ' ' + moves;
-		
+    	
 		if (!card.classList.contains('open') && !card.classList.contains('show') && !card.classList.contains('match')) {
 			openCards.push(card);
 			card.classList.add('open','show');
-			
+
 			if (openCards.length == 2) {
 				if (openCards[0].dataset.card == openCards[1].dataset.card) {
 					openCards[0].classList.add('match');
@@ -120,12 +122,19 @@ allCards.forEach(function(card) {
 					openCards[1].classList.add('show');
 
 					openCards = [];
+
+					moves += 1;
+					moveCounter.innerText = ' ' + moves;
+					
 				} else {
 					// if cards doesn't match - turn them back
 					setTimeout(function() {
 						openCards.forEach(function(card) {
 							card.classList.remove('open', 'show');
 						});
+						
+						moves += 1;
+						moveCounter.innerText = ' ' + moves;
 
 						openCards = [];
 					}, 1000);
