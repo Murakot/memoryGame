@@ -5,6 +5,8 @@
 var timer = null;
 var openCards;
 var totalSeconds;
+var moves;
+var moveCounter = document.querySelector('.moves');
 var deck = document.querySelector('.deck');
 var cards = ['fa-diamond', 'fa-diamond',
 			'fa-paper-plane-o', 'fa-paper-plane-o',
@@ -54,18 +56,12 @@ function shuffle(array) {
  *    + if all cards have matched, display a message with the final score (put this functionality in another function that you call from this one)
  */
 
-//TODO: Need to figure out about the Moves. They doesn't work inside the Function.
-// var moves = 0;
-// moves += 1;
-// var moveCounter = document.querySelector('.moves');
-// moveCounter.innerText = moves;
-
 function initGame() {
 	openCards = [];
-  totalSeconds = 0;
+  	totalSeconds = 0;
+  	moves = 0;
 	var cardHTML = shuffle(cards).map(function(card) {
-		/* return generateCard(card); */
-    return `<li class="card" data-card="${card}"><i class="fa ${card}"></i></li>`;
+    	return `<li class="card" data-card="${card}"><i class="fa ${card}"></i></li>`;
 	});
 
 	deck.innerHTML = cardHTML.join('');
@@ -101,9 +97,14 @@ var allCards = document.querySelectorAll('.card');
 
 allCards.forEach(function(card) {
 	card.addEventListener('click', function(e) {
+    
     if(timer === null) {
     	timer = setInterval(setTime, 1000);
     }
+    
+	moves += 1;
+	moveCounter.innerText = ' ' + moves;
+		
 		if (!card.classList.contains('open') && !card.classList.contains('show') && !card.classList.contains('match')) {
 			openCards.push(card);
 			card.classList.add('open','show');
