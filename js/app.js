@@ -1,6 +1,10 @@
 /*
  * Create a list that holds all of your cards
  */
+var timer = null;
+var openCards;
+var totalSeconds;
+var deck = document.querySelector('.deck');
 var cards = ['fa-diamond', 'fa-diamond',
 			'fa-paper-plane-o', 'fa-paper-plane-o',
 			'fa-anchor', 'fa-anchor',
@@ -56,9 +60,10 @@ function shuffle(array) {
 // moveCounter.innerText = moves;
 
 function initGame() {
-	var deck = document.querySelector('.deck');
+	openCards = [];
+	totalSeconds = 0;
 	var cardHTML = shuffle(cards).map(function(card) {
-		return generateCard(card);
+		return `<li class="card" data-card="${card}"><i class="fa ${card}"></i></li>`;
 	});
 
 	deck.innerHTML = cardHTML.join('');
@@ -90,10 +95,13 @@ function pad(val) {
 // End of Timer
 
 var allCards = document.querySelectorAll('.card');
-var openCards = [];
 
 allCards.forEach(function(card) {
 	card.addEventListener('click', function(e) {
+
+		if(timer === null) {
+    	timer = setInterval(setTime, 1000);
+    	}
 
 		if (!card.classList.contains('open') && !card.classList.contains('show') && !card.classList.contains('match')) {
 			openCards.push(card);
