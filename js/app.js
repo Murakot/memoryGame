@@ -8,6 +8,7 @@ var matched = 0;
 var totalSeconds;
 var moves;
 var moveCounter = document.querySelector('.moves');
+var score = document.querySelector('.stars');
 var deck = document.querySelector('.deck');
 var cards = ['fa-diamond', 'fa-diamond',
 			'fa-paper-plane-o', 'fa-paper-plane-o',
@@ -101,6 +102,11 @@ function pad(val) {
 var allCards = document.querySelectorAll('.card');
 
 moveCounter.innerText = `Moves: ${moves}`;
+
+// Rating stars
+var rating = '<li><i class="fa fa-star"></i></li>';
+
+score.innerHTML = rating;
 
 allCards.forEach(function(card) {
 	card.addEventListener('click', function(e) {
