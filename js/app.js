@@ -104,7 +104,8 @@ moveCounter.innerText = 'Moves: ' + moves;
 
 function win() {
 	// timer = clearInterval();
-	alert('Congratulations!\nYou won!');
+	alert(`Congratulations!
+		You won!`);
 }
 
 allCards.forEach(function(card) {
