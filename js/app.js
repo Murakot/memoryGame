@@ -102,6 +102,11 @@ var allCards = document.querySelectorAll('.card');
 
 moveCounter.innerText = 'Moves: ' + moves;
 
+function win() {
+	// timer = clearInterval();
+	alert('Congratulations!\nYou won!');
+}
+
 allCards.forEach(function(card) {
 	card.addEventListener('click', function(e) {
     
@@ -124,8 +129,14 @@ allCards.forEach(function(card) {
 					openCards[1].classList.add('show');
 
 					openCards = [];
+					
 					matched += 1;
-					console.log(matched);
+					switch (matched) {
+						case 8:
+						win();
+						break;
+					}
+					console.log('Already matched: ' + matched);
 
 					moves += 1;
 					moveCounter.innerText = 'Moves: ' + moves;
