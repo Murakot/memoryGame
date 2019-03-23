@@ -8,7 +8,14 @@ var matched = 0;
 var totalSeconds;
 var moves;
 var moveCounter = document.querySelector('.moves');
+
+// Rating
 var score = document.querySelector('.stars');
+var ratingCode = `<li><i class="fa fa-star"></i></li>`;
+var ratingStars = ratingCode.repeat(3);
+score.innerHTML = ratingStars;
+var ratingScore = 3;
+
 var deck = document.querySelector('.deck');
 var cards = ['fa-diamond', 'fa-diamond',
 			'fa-paper-plane-o', 'fa-paper-plane-o',
@@ -104,9 +111,9 @@ var allCards = document.querySelectorAll('.card');
 moveCounter.innerText = `Moves: ${moves}`;
 
 // Rating stars
-var ratingCode = `<li><i class="fa fa-star"></i></li>`;
-ratingStars = ratingCode.repeat(3);
-score.innerHTML = ratingStars;
+
+// ratingScore; // TODO: Here should be calculation about the score
+// ratingStars = ratingCode.repeat(ratingScore);
 
 // Starting to click!
 allCards.forEach(function(card) {
@@ -119,6 +126,18 @@ allCards.forEach(function(card) {
 		if (!card.classList.contains('open') && !card.classList.contains('show') && !card.classList.contains('match')) {
 			openCards.push(card);
 			card.classList.add('open','show');
+
+			ratingStars = ratingCode.repeat(ratingScore);
+			switch (moves) {
+				case 2:
+					ratingScore -= 1;
+					break;
+				case 3:
+					ratingScore -= 1;
+					break;
+				}
+				ratingStars = ratingCode.repeat(ratingScore);
+				score.innerHTML = ratingStars;
 
 			if (openCards.length == 2) {
 				if (openCards[0].dataset.card == openCards[1].dataset.card) {
