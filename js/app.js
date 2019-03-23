@@ -104,10 +104,11 @@ var allCards = document.querySelectorAll('.card');
 moveCounter.innerText = `Moves: ${moves}`;
 
 // Rating stars
-var rating = '<li><i class="fa fa-star"></i></li>';
+var ratingCode = `<li><i class="fa fa-star"></i></li>`;
+ratingStars = ratingCode.repeat(3);
+score.innerHTML = ratingStars;
 
-score.innerHTML = rating;
-
+// Starting to click!
 allCards.forEach(function(card) {
 	card.addEventListener('click', function(e) {
     
