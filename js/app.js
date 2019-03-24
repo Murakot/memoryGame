@@ -13,6 +13,8 @@ var moveCounter = document.querySelector('.moves');
 var score = document.querySelector('.stars');
 var ratingCode = `<li><i class="fa fa-star"></i></li>`;
 var ratingScore = 3;
+var ratingStars = ratingCode.repeat(ratingScore);
+score.innerHTML = ratingStars;
 
 // function rating(x, y) {
 // 	var test = 
@@ -20,8 +22,22 @@ var ratingScore = 3;
 // 	console.log(x * y);
 // }
 
-var ratingStars = ratingCode.repeat(ratingScore);
-score.innerHTML = ratingStars;
+function updateRating() {
+		if(moves > 13) {
+			if(ratingScore != 2) {
+				ratingScore = 2;
+				ratingStars = ratingCode.repeat(ratingScore);
+				score.innerHTML = ratingStars;
+			}
+		}
+		if(moves > 23) {
+			if(ratingScore != 1) {
+				ratingScore = 1;
+				ratingStars = ratingCode.repeat(ratingScore);
+				score.innerHTML = ratingStars;
+			}
+		}
+	}
 
 var deck = document.querySelector('.deck');
 var cards = ['fa-diamond', 'fa-diamond',
@@ -161,7 +177,8 @@ allCards.forEach(function(card) {
 				}
 				// Counting moves
 				moves += 1;
-				moveCounter.innerText = `Moves: ${moves}`;			
+				moveCounter.innerText = `Moves: ${moves}`;
+				updateRating();			
 			}
 		}
 	});
