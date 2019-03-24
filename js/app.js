@@ -13,6 +13,13 @@ var moveCounter = document.querySelector('.moves');
 var score = document.querySelector('.stars');
 var ratingCode = `<li><i class="fa fa-star"></i></li>`;
 var ratingScore = 3;
+
+// function rating(x, y) {
+// 	var test = 
+// 	retur 
+// 	console.log(x * y);
+// }
+
 var ratingStars = ratingCode.repeat(ratingScore);
 score.innerHTML = ratingStars;
 
@@ -117,18 +124,6 @@ allCards.forEach(function(card) {
 			openCards.push(card);
 			card.classList.add('open','show');
 
-			ratingStars = ratingCode.repeat(ratingScore);
-			switch (moves) {
-				case 2:
-					ratingScore -= 1;
-					break;
-				case 3:
-					ratingScore -= 1;
-					break;
-				}
-				ratingStars = ratingCode.repeat(ratingScore);
-				score.innerHTML = ratingStars;
-
 			if (openCards.length == 2) {
 				if (openCards[0].dataset.card == openCards[1].dataset.card) {
 					openCards[0].classList.add('match');
@@ -141,9 +136,6 @@ allCards.forEach(function(card) {
 
 					openCards = [];
 					
-					moves += 1;
-					moveCounter.innerText = `Moves: ${moves}`;
-
 					// Counting matches.
 					matched += 1;
 					// if 8 matched - you won!
@@ -161,15 +153,15 @@ allCards.forEach(function(card) {
 					// if cards doesn't match - turn them back
 					setTimeout(function() {
 						openCards.forEach(function(card) {
+							// card.classList.toggle('wobble');
 							card.classList.remove('open', 'show');
 						});
-						
-						moves += 1;
-						moveCounter.innerText = `Moves: ${moves}`;
-
 						openCards = [];
 					}, 1000);
 				}
+				// Counting moves
+				moves += 1;
+				moveCounter.innerText = `Moves: ${moves}`;			
 			}
 		}
 	});
