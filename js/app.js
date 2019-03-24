@@ -16,12 +16,6 @@ var ratingScore = 3;
 var ratingStars = ratingCode.repeat(ratingScore);
 score.innerHTML = ratingStars;
 
-// function rating(x, y) {
-// 	var test = 
-// 	retur 
-// 	console.log(x * y);
-// }
-
 function updateRating() {
 		if(moves > 13) {
 			if(ratingScore != 2) {
@@ -122,11 +116,6 @@ function pad(val) {
 var allCards = document.querySelectorAll('.card');
 
 moveCounter.innerText = `Moves: ${moves}`;
-
-// Rating stars
-
-// ratingScore; // TODO: Here should be calculation about the score
-// ratingStars = ratingCode.repeat(ratingScore);
 
 // Starting to click!
 allCards.forEach(function(card) {
