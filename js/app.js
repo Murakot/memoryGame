@@ -12,9 +12,9 @@ var moveCounter = document.querySelector('.moves');
 // Rating
 var score = document.querySelector('.stars');
 var ratingCode = `<li><i class="fa fa-star"></i></li>`;
-var ratingStars = ratingCode.repeat(3);
-score.innerHTML = ratingStars;
 var ratingScore = 3;
+var ratingStars = ratingCode.repeat(ratingScore);
+score.innerHTML = ratingStars;
 
 var deck = document.querySelector('.deck');
 var cards = ['fa-diamond', 'fa-diamond',
@@ -26,10 +26,6 @@ var cards = ['fa-diamond', 'fa-diamond',
 			'fa-bicycle', 'fa-bicycle',
 			'fa-bomb', 'fa-bomb',
 			];
-
-/* function generateCard(card) {
-  return `<li class="card" data-card="${card}"><i class="fa ${card}"></i></li>`;
-} */
 
 /*
  * Display the cards on the page
@@ -83,8 +79,6 @@ initGame();
 var minutesLabel = document.querySelector('.minutes');
 var secondsLabel = document.querySelector('.seconds');
 
-//setInterval(setTime, 1000);
-
 function setTime() {
   ++totalSeconds;
   secondsLabel.innerHTML = pad(totalSeconds % 60);
@@ -101,11 +95,7 @@ function pad(val) {
 }
 // End of Timer
 
-// Flipping cards
-// function flip() {
-//     $('.card').toggleClass('flipped');
-// }
-
+// Listening to clicks
 var allCards = document.querySelectorAll('.card');
 
 moveCounter.innerText = `Moves: ${moves}`;
