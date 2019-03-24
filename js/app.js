@@ -43,6 +43,11 @@ var cards = ['fa-diamond', 'fa-diamond',
 			'fa-bicycle', 'fa-bicycle',
 			'fa-bomb', 'fa-bomb',
 			];
+var modal = document.getElementById('win-popup');
+// function winPopup() {
+// 	console.log('Win!');
+// 	modal.style.display = "block";
+// }
 
 /*
  * Display the cards on the page
@@ -145,11 +150,11 @@ allCards.forEach(function(card) {
 					matched += 1;
 					// if 8 matched - you won!
 					switch (matched) {
-						case 8:
-						setTimeout(function winning() {
-							timer = clearInterval(setTime, 0);
-							alert(`You won! Moves made: ${moves}. Time: ${pad(parseInt(totalSeconds / 60))}:${pad(totalSeconds % 60)}. Your score: ${ratingScore} Stars!`);
-						}, 1000);
+						case 2:
+						modal.style.display = "block";
+						// setTimeout(function() { 
+						// winPopup();
+						// alert(`You won! Moves made: ${moves}. Time: ${pad(parseInt(totalSeconds / 60))}:${pad(totalSeconds % 60)}. Your score: ${ratingScore} Stars!`);
 						break;
 					}
 
