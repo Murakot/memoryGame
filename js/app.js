@@ -17,21 +17,21 @@ var ratingStars = ratingCode.repeat(ratingScore);
 score.innerHTML = ratingStars;
 
 function updateRating() {
-		if(moves > 13) {
-			if(ratingScore != 2) {
-				ratingScore = 2;
-				ratingStars = ratingCode.repeat(ratingScore);
-				score.innerHTML = ratingStars;
-			}
-		}
-		if(moves > 23) {
-			if(ratingScore != 1) {
-				ratingScore = 1;
-				ratingStars = ratingCode.repeat(ratingScore);
-				score.innerHTML = ratingStars;
-			}
+	if(moves > 13) {
+		if(ratingScore != 2) {
+			ratingScore = 2;
+			ratingStars = ratingCode.repeat(ratingScore);
+			score.innerHTML = ratingStars;
 		}
 	}
+	if(moves > 23) {
+		if(ratingScore != 1) {
+			ratingScore = 1;
+			ratingStars = ratingCode.repeat(ratingScore);
+			score.innerHTML = ratingStars;
+		}
+	}
+}
 
 var deck = document.querySelector('.deck');
 var cards = ['fa-diamond', 'fa-diamond',
@@ -147,9 +147,8 @@ allCards.forEach(function(card) {
 					switch (matched) {
 						case 8:
 						setTimeout(function winning() {
-							timer = clearInterval();
-							alert(
-							`You won! Moves made: ${moves}. Time: `);
+							timer = clearInterval(setTime, 0);
+							alert(`You won! Moves made: ${moves}. Time: ${pad(parseInt(totalSeconds / 60))}:${pad(totalSeconds % 60)}. Your score: ${ratingScore} Stars!`);
 						}, 1000);
 						break;
 					}
