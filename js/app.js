@@ -44,6 +44,8 @@ var cards = ['fa-diamond', 'fa-diamond',
 			'fa-bomb', 'fa-bomb',
 			];
 var modal = document.getElementById('win-popup');
+// https://www.w3schools.com/howto/howto_css_modals.asp
+
 // function winPopup() {
 // 	console.log('Win!');
 // 	modal.style.display = "block";
