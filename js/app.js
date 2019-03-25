@@ -46,15 +46,18 @@ var cards = ['fa-diamond', 'fa-diamond',
 
 var modal = document.getElementById('win-popup');
 var modalTime = document.getElementById('time_results');
-
 var modalMoves = document.getElementById('moves_results');
-
 var modalScore = document.getElementById('score_results');
-
 
 function winPopup() {
 	console.log('Win!');
 	modal.style.display = "block";
+}
+
+window.onclick = function(event) {
+  // if (event.target == modal) {
+    modal.style.display = "none";
+  // }
 }
 
 /*
@@ -158,7 +161,7 @@ allCards.forEach(function(card) {
 					matched += 1;
 					// if 8 matched - you won!
 					switch (matched) {
-						case 2:
+						case 8:
 						setTimeout(function() {
 						winPopup();
 						modalTime.innerText = `${pad(parseInt(totalSeconds / 60))}:${pad(totalSeconds % 60)}`;
