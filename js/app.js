@@ -1,4 +1,16 @@
 /*
+TODO:
+1. No more clics, when two not matched cards are already opened
+2. Matched animation
+3. Not matched animation
+4. Stop the timer
+5. Restart by icon click
+6. Add 'close button' and 'restart button' on the Popup
+7. Code cleaning
+*/
+
+
+/*
  * Create a list that holds all of your cards
  */
  
@@ -33,6 +45,7 @@ function updateRating() {
 	}
 }
 
+// Card variables
 var deck = document.querySelector('.deck');
 var cards = ['fa-diamond', 'fa-diamond',
 			'fa-paper-plane-o', 'fa-paper-plane-o',
@@ -44,6 +57,7 @@ var cards = ['fa-diamond', 'fa-diamond',
 			'fa-bomb', 'fa-bomb',
 			];
 
+// Popup Modal variables
 var modal = document.getElementById('win-popup');
 var modalTime = document.getElementById('time_results');
 var modalMoves = document.getElementById('moves_results');
@@ -54,6 +68,7 @@ function winPopup() {
 	modal.style.display = "block";
 }
 
+// Closing the Popup
 window.onclick = function(event) {
   // if (event.target == modal) {
     modal.style.display = "none";
@@ -108,7 +123,6 @@ function initGame() {
 initGame();
 
 // Timer!
-
 var minutesLabel = document.querySelector('.minutes');
 var secondsLabel = document.querySelector('.seconds');
 
