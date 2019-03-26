@@ -6,7 +6,8 @@ TODO:
 4. Stop the timer
 5. Restart by icon click
 6. Add 'close button' and 'restart button' on the Popup
-7. Code cleaning
+7. Star instead of Stars (line 184), when there is only one star earned
+8. Code cleaning
 */
 
 
