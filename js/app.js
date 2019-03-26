@@ -1,8 +1,8 @@
 /*
 TODO:
 1. No more clics, when two not matched cards are already opened
-2. Matched animation
-3. Not matched animation
+
+
 4. Stop the timer
 5. Restart by icon click
 6. Add 'close button' and 'restart button' on the Popup
@@ -190,7 +190,6 @@ allCards.forEach(function(card) {
 					// if cards doesn't match - turn them back
 					setTimeout(function() {
 						openCards.forEach(function(card) {
-							// card.classList.toggle('wobble');
 							card.classList.remove('open', 'show');
 						});
 						openCards = [];
