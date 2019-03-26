@@ -69,13 +69,6 @@ function winPopup() {
 	modal.style.display = "block";
 }
 
-// Closing the Popup
-window.onclick = function(event) {
-  // if (event.target == modal) {
-    modal.style.display = "none";
-  // }
-}
-
 /*
  * Display the cards on the page
  *   - shuffle the list of cards using the provided "shuffle" method below

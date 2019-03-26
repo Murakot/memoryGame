@@ -16,8 +16,7 @@
         </header>
 
         <section class="score-panel">
-        	<!-- TODO: Need to update stars, based on moves -->
-            <span>Score: <ul class="stars"></ul></span>
+        	<span>Score: <ul class="stars"></ul></span>
             <!-- Goes from JS -->
         	<span class="moves"></span>
 
@@ -33,7 +32,8 @@
 
         <!-- Generating the deck in JS (function generateCard) -->
         <ul class="deck"></ul>
-
+        
+        <!-- Win Popup -->
         <div id="win-popup" class="modal">
             <div class="modal-content">
                 <h4>Congratulations!</h4>
@@ -42,6 +42,8 @@
                 <p>Time: <span id="time_results"></span></p>
                 <p>Moves: <span id="moves_results"></span></p>
                 <p>Score: <span id="score_results"></span></p>
+                
+                <button id="restart_button" class="button" onclick="document.location.reload(true)"><i class="fa fa-repeat"></i> Start again</button>
             </div>
         </div>
     </div>
