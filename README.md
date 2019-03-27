@@ -27,3 +27,8 @@ After all pairs are matched - player will be notified about the winning conditio
 Popup contains game summary: moves counter, time and rating.
 
 Player could start game again from the Popup.
+
+## Dependencies:
+
+1. Font Awesome https://fontawesome.com/
+2. Shuffle function from http://stackoverflow.com/a/2450976
