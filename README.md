@@ -32,3 +32,4 @@ Player could start game again from the Popup.
 
 1. Font Awesome https://fontawesome.com/
 2. Shuffle function from http://stackoverflow.com/a/2450976
+3. JS Skills from https://udacity.com
